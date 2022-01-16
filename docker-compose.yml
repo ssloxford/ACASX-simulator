@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  simulator:
+    build:
+      context: .
+      dockerfile: acasx.dockerfile
+    volumes: 
+      - ./code/:/acasx/code/
+      - ./test_encounters/test_encounters/:/acasx/code/test_encounters/
+      # Change the two lines below if you wish to change where your input and output comes from
+      - ./input_data/:/input_data/
+      - ./output_data/:/output_data/
+
+      

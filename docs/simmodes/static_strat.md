@@ -1,0 +1,2 @@
+Static Strategy Mode
+====================
